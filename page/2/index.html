@@ -1,0 +1,317 @@
+<!DOCTYPE html><html lang="en" data-theme="light"><head><meta charset="UTF-8"><meta http-equiv="X-UA-Compatible" content="IE=edge"><meta name="viewport" content="width=device-width, initial-scale=1.0,viewport-fit=cover"><title>Hexo</title><meta name="author" content="Tom"><meta name="copyright" content="Tom"><meta name="format-detection" content="telephone=no"><meta name="theme-color" content="#ffffff"><meta property="og:type" content="website">
+<meta property="og:title" content="Hexo">
+<meta property="og:url" content="http://example.com/page/2/index.html">
+<meta property="og:site_name" content="Hexo">
+<meta property="og:locale" content="en_US">
+<meta property="og:image" content="https://i.loli.net/2021/02/24/5O1day2nriDzjSu.png">
+<meta property="article:author" content="Tom">
+<meta name="twitter:card" content="summary">
+<meta name="twitter:image" content="https://i.loli.net/2021/02/24/5O1day2nriDzjSu.png"><link rel="shortcut icon" href="/img/favicon.png"><link rel="canonical" href="http://example.com/page/2/index.html"><link rel="preconnect" href="//cdn.jsdelivr.net"/><link rel="preconnect" href="//busuanzi.ibruce.info"/><link rel="stylesheet" href="/css/index.css"><link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free/css/all.min.css" media="print" onload="this.media='all'"><link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fancyapps/ui/dist/fancybox/fancybox.min.css" media="print" onload="this.media='all'"><script>const GLOBAL_CONFIG = {
+  root: '/',
+  algolia: undefined,
+  localSearch: undefined,
+  translate: undefined,
+  noticeOutdate: undefined,
+  highlight: {"plugin":"highlighjs","highlightCopy":true,"highlightLang":true,"highlightHeightLimit":false},
+  copy: {
+    success: 'Copy successfully',
+    error: 'Copy error',
+    noSupport: 'The browser does not support'
+  },
+  relativeDate: {
+    homepage: false,
+    post: false
+  },
+  runtime: '',
+  dateSuffix: {
+    just: 'Just',
+    min: 'minutes ago',
+    hour: 'hours ago',
+    day: 'days ago',
+    month: 'months ago'
+  },
+  copyright: undefined,
+  lightbox: 'fancybox',
+  Snackbar: undefined,
+  source: {
+    justifiedGallery: {
+      js: 'https://cdn.jsdelivr.net/npm/flickr-justified-gallery/dist/fjGallery.min.js',
+      css: 'https://cdn.jsdelivr.net/npm/flickr-justified-gallery/dist/fjGallery.min.css'
+    }
+  },
+  isPhotoFigcaption: false,
+  islazyload: false,
+  isAnchor: false,
+  percent: {
+    toc: true,
+    rightside: false,
+  },
+  autoDarkmode: false
+}</script><script id="config-diff">var GLOBAL_CONFIG_SITE = {
+  title: 'Hexo',
+  isPost: false,
+  isHome: true,
+  isHighlightShrink: false,
+  isToc: false,
+  postUpdate: '2025-03-27 16:22:08'
+}</script><noscript><style type="text/css">
+  #nav {
+    opacity: 1
+  }
+  .justified-gallery img {
+    opacity: 1
+  }
+
+  #recent-posts time,
+  #post-meta time {
+    display: inline !important
+  }
+</style></noscript><script>(win=>{
+    win.saveToLocal = {
+      set: function setWithExpiry(key, value, ttl) {
+        if (ttl === 0) return
+        const now = new Date()
+        const expiryDay = ttl * 86400000
+        const item = {
+          value: value,
+          expiry: now.getTime() + expiryDay,
+        }
+        localStorage.setItem(key, JSON.stringify(item))
+      },
+
+      get: function getWithExpiry(key) {
+        const itemStr = localStorage.getItem(key)
+
+        if (!itemStr) {
+          return undefined
+        }
+        const item = JSON.parse(itemStr)
+        const now = new Date()
+
+        if (now.getTime() > item.expiry) {
+          localStorage.removeItem(key)
+          return undefined
+        }
+        return item.value
+      }
+    }
+  
+    win.getScript = url => new Promise((resolve, reject) => {
+      const script = document.createElement('script')
+      script.src = url
+      script.async = true
+      script.onerror = reject
+      script.onload = script.onreadystatechange = function() {
+        const loadState = this.readyState
+        if (loadState && loadState !== 'loaded' && loadState !== 'complete') return
+        script.onload = script.onreadystatechange = null
+        resolve()
+      }
+      document.head.appendChild(script)
+    })
+  
+    win.getCSS = (url,id = false) => new Promise((resolve, reject) => {
+      const link = document.createElement('link')
+      link.rel = 'stylesheet'
+      link.href = url
+      if (id) link.id = id
+      link.onerror = reject
+      link.onload = link.onreadystatechange = function() {
+        const loadState = this.readyState
+        if (loadState && loadState !== 'loaded' && loadState !== 'complete') return
+        link.onload = link.onreadystatechange = null
+        resolve()
+      }
+      document.head.appendChild(link)
+    })
+  
+      win.activateDarkMode = function () {
+        document.documentElement.setAttribute('data-theme', 'dark')
+        if (document.querySelector('meta[name="theme-color"]') !== null) {
+          document.querySelector('meta[name="theme-color"]').setAttribute('content', '#0d0d0d')
+        }
+      }
+      win.activateLightMode = function () {
+        document.documentElement.setAttribute('data-theme', 'light')
+        if (document.querySelector('meta[name="theme-color"]') !== null) {
+          document.querySelector('meta[name="theme-color"]').setAttribute('content', '#ffffff')
+        }
+      }
+      const t = saveToLocal.get('theme')
+    
+          if (t === 'dark') activateDarkMode()
+          else if (t === 'light') activateLightMode()
+        
+      const asideStatus = saveToLocal.get('aside-status')
+      if (asideStatus !== undefined) {
+        if (asideStatus === 'hide') {
+          document.documentElement.classList.add('hide-aside')
+        } else {
+          document.documentElement.classList.remove('hide-aside')
+        }
+      }
+    
+    const detectApple = () => {
+      if(/iPad|iPhone|iPod|Macintosh/.test(navigator.userAgent)){
+        document.documentElement.classList.add('apple')
+      }
+    }
+    detectApple()
+    })(window)</script><meta name="generator" content="Hexo 6.3.0"></head><body><div id="sidebar"><div id="menu-mask"></div><div id="sidebar-menus"><div class="avatar-img is-center"><img src="https://i.loli.net/2021/02/24/5O1day2nriDzjSu.png" onerror="onerror=null;src='/img/friend_404.gif'" alt="avatar"/></div><div class="sidebar-site-data site-data is-center"><a href="/archives/"><div class="headline">Articles</div><div class="length-num">20</div></a><a href="/tags/"><div class="headline">Tags</div><div class="length-num">13</div></a><a href="/categories/"><div class="headline">Categories</div><div class="length-num">14</div></a></div><hr class="custom-hr"/></div></div><div class="page" id="body-wrap"><header class="full_page" id="page-header"><nav id="nav"><span id="blog-info"><a href="/" title="Hexo"><span class="site-name">Hexo</span></a></span><div id="menus"><div id="toggle-menu"><a class="site-page" href="javascript:void(0);"><i class="fas fa-bars fa-fw"></i></a></div></div></nav><div id="site-info"><h1 id="site-title">Hexo</h1></div><div id="scroll-down"><i class="fas fa-angle-down scroll-down-effects"></i></div></header><main class="layout" id="content-inner"><div class="recent-posts" id="recent-posts"><div class="recent-post-item"><div class="recent-post-info no-cover"><a class="article-title" href="/2025/03/27/Markdown/table/" title="table">table</a><div class="article-meta-wrap"><span class="post-meta-date"><i class="far fa-calendar-alt"></i><span class="article-meta-label">Created</span><time datetime="2025-03-27T16:21:55.087Z" title="Created 2025-03-27 16:21:55">2025-03-27</time></span><span class="article-meta"><span class="article-meta-separator">|</span><i class="fas fa-inbox"></i><a class="article-meta__categories" href="/categories/Markdown/">Markdown</a></span></div><div class="content">基本语法123456|、-、:之间的多余空格会被忽略，不影响布局。默认标题栏居中对齐，内容居左对齐。    -:表示内容和标题栏居右对齐    :-表示内容和标题栏居左对齐    :-:表示内容和标题栏居中对齐内容和|之间的多余空格会被忽略，每行第一个|和最后一个|可以省略，-的数量至少一个。
+
+简单表格12345表头| 表头-|-单元格|单元格单元格|单元格单元格|单元格
+
+12345|  表头   | 表头  ||  ----  | ----   || 单元格  | 单元格 || 单元格  | 单元格 || 单元格  | 单元格 |
+
+对齐方式123-: 设置内容和标题栏居右对齐。:- 设置内容和标题栏居左对齐。:-: 设置内容和标题栏居中对齐。
+
+12345| 左对齐 | 右对齐 | 居中对齐 || :-----| ----: | :----: || 单元格 | 单元格 | 单元格 || 单元格 | 单元格 | 单元格 || 单元格 | 单元格 | 单元格 |
+
+</div></div></div><div class="recent-post-item"><div class="recent-post-info no-cover"><a class="article-title" href="/2025/03/27/linux/iperf/iperf/" title="iperf">iperf</a><div class="article-meta-wrap"><span class="post-meta-date"><i class="far fa-calendar-alt"></i><span class="article-meta-label">Created</span><time datetime="2025-03-27T16:21:55.087Z" title="Created 2025-03-27 16:21:55">2025-03-27</time></span><span class="article-meta"><span class="article-meta-separator">|</span><i class="fas fa-inbox"></i><a class="article-meta__categories" href="/categories/linux-iperf/">linux iperf</a></span></div><div class="content">iperf123456789默认 （客户端 -&gt; 服务端）服务端：iperf3 -s客户端：iperf3 -c ip反向（服务端 -&gt; 客户端 ）iperf3 -c ip -R
+
+
+
+
+选项
+作用
+
+
+
+-s
+服务器模式
+
+
+-c &lt;IP&gt;
+连接到服务器
+
+
+-p &lt;端口&gt;
+指定端口（默认 5201）
+
+
+-t &lt;秒数&gt;
+设定测试时长（默认 10s）
+
+
+-P &lt;连接数&gt;
+设定并行连接数
+
+
+-u
+使用 UDP 协议
+
+
+-b &lt;带宽&gt;
+设定 UDP 发送速率
+
+
+-R
+反向测试（服务器 → 客户端）
+
+
+--bidir
+双向同时测试
+
+
+-D
+服务器后台运行
+
+
+-V
+详细日志
+
+
+-f [kmgtKMGT]
+设定带宽单位（K&#x2F;M&#x2F;G&#x2F;T 比特）
+
+
+-i &lt;秒数&gt;
+设定报告间隔时间
+
+
+-F &lt;文件名&gt;
+传输指定文件
+
+
+-A &lt;核心号&gt;
+绑定到指定 CPU 核心
+
+
+-B &lt;IP&gt;
+绑定到指定 IP 地址
+
+
+--bind-dev  ...</div></div></div><div class="recent-post-item"><div class="recent-post-info no-cover"><a class="article-title" href="/2025/03/27/linux/shell/shell-calculator/" title="shell-calculator">shell-calculator</a><div class="article-meta-wrap"><span class="post-meta-date"><i class="far fa-calendar-alt"></i><span class="article-meta-label">Created</span><time datetime="2025-03-27T16:21:55.087Z" title="Created 2025-03-27 16:21:55">2025-03-27</time></span><span class="article-meta"><span class="article-meta-separator">|</span><i class="fas fa-inbox"></i><a class="article-meta__categories" href="/categories/shell/">shell</a></span></div><div class="content">12345678910111213141516171819202122# 使用 `bc` 计算器（支持浮点数）echo &quot;3.14 * 2&quot; | bcecho &quot;scale=4; 10 / 3&quot; | bc  # 设置浮点精度# 使用 `expr` 计算（仅支持整数）expr 5 + 3# 使用 `$(( ))` 进行整数运算echo $((3 + 5))echo $((10 / 3))  # 整数除法echo $((2 ** 3))  # 计算 2^3# 使用 `python` 计算python3 -c &quot;print(3.14 * 2)&quot;# 使用 `awk` 计算awk &#x27;BEGIN &#123;print 10 / 3&#125;&#x27;# 计算 `sin()`、`cos()`、`sqrt()`echo &quot;s(1)&quot; | bc -l   # sin(1)echo &quot;c(1)&quot; | bc -l   # cos(1)echo &quot;sqrt(16)&quot; | bc ...</div></div></div><div class="recent-post-item"><div class="recent-post-info no-cover"><a class="article-title" href="/2025/03/27/linux/shell/shell-dd/" title="shell-dd">shell-dd</a><div class="article-meta-wrap"><span class="post-meta-date"><i class="far fa-calendar-alt"></i><span class="article-meta-label">Created</span><time datetime="2025-03-27T16:21:55.087Z" title="Created 2025-03-27 16:21:55">2025-03-27</time></span><span class="article-meta"><span class="article-meta-separator">|</span><i class="fas fa-inbox"></i><a class="article-meta__categories" href="/categories/shell/">shell</a></span></div><div class="content">dd 命令是一个强大的复制和转换文件的工具，你可以使用 seek 参数指定偏移量。假设你要将文件写入偏移地址 0x00000b60，你可以使用以下命令：
+123456789101112dd if=input_file of=output_file bs=1 seek=$((0x00000b60)) conv=notrunc这里的参数含义如下：    if=input_file: 源文件路径。    of=output_file: 目标文件路径。    bs=1: 设置块大小为 1 字节。    seek=$((0x00000b60)): 设置偏移量为 0x00000b60 字节。    conv=notrunc: 表示不截断目标文件，以保留文件中的其他内容。请替换 input_file 和 output_file 为实际的文件路径。这个命令会将源文件的内容从指定偏移地址开始复制到目标文件中
+
+seek： seek 用于设置输出文件的起始位置（偏移量）。它表示从输出文件的开头跳过指定的块数。语法如下：
+
+1234seek=N其中 N 表示块数或字节数，可以使用合适的单位（例如，k 表示千 ...</div></div></div><div class="recent-post-item"><div class="recent-post-info no-cover"><a class="article-title" href="/2025/03/27/linux/traceroute/traceroute/" title="traceroute">traceroute</a><div class="article-meta-wrap"><span class="post-meta-date"><i class="far fa-calendar-alt"></i><span class="article-meta-label">Created</span><time datetime="2025-03-27T16:21:55.087Z" title="Created 2025-03-27 16:21:55">2025-03-27</time></span><span class="article-meta"><span class="article-meta-separator">|</span><i class="fas fa-inbox"></i><a class="article-meta__categories" href="/categories/linux-traceroute/">linux traceroute</a></span></div><div class="content">traceroute追踪 IP（即跟踪数据包的路由路径）
+1traceroute example.com
+
+
+
+
+命令
+作用
+适用系统
+
+
+
+traceroute IP/域名
+追踪数据包路由
+Linux&#x2F;macOS
+
+
+tracert IP/域名
+追踪数据包路由
+Windows
+
+
+mtr IP/域名
+实时路由跟踪
+Linux&#x2F;macOS
+
+
+ping IP/域名
+测试 IP 是否可达
+Linux&#x2F;Windows
+
+
+</div></div></div><div class="recent-post-item"><div class="recent-post-info no-cover"><a class="article-title" href="/2023/12/07/u-boot-lds/" title="uboot-lds">uboot-lds</a><div class="article-meta-wrap"><span class="post-meta-date"><i class="far fa-calendar-alt"></i><span class="article-meta-label">Created</span><time datetime="2023-12-07T20:35:35.000Z" title="Created 2023-12-07 20:35:35">2023-12-07</time></span><span class="article-meta"><span class="article-meta-separator">|</span><i class="fas fa-inbox"></i><a class="article-meta__categories" href="/categories/uboot/">uboot</a></span></div><div class="content">这是一个 U-Boot bootloader 的链接脚本（Linker Script），用于指定 U-Boot 在内存中的布局和各个部分的放置规则。以下是对该脚本的简要解释：
+12345OUTPUT_FORMAT(&quot;elf32-littlearc&quot;, &quot;elf32-littlearc&quot;, &quot;elf32-littlearc&quot;)OUTPUT_ARCH(arc)    指定输出文件的格式为 ELF32-little-endian，输出的架构为 ARC。
+入口点：
+1234ENTRY(_start)    指定程序的入口点为 _start。
+SECTIONS 部分：
+1234567SECTIONS&#123;   ...&#125;    SECTIONS 部分定义了各个段的布局。
+代码段（.text）：
+1234567.text : &#123;   arch/arc/lib/start.o (.text*)   *(.text*)&#125;    将 arch/arc/lib/start.o 中的 .text* 段放入 .tex ...</div></div></div><div class="recent-post-item"><div class="recent-post-info no-cover"><a class="article-title" href="/2023/11/09/gerrit-build/" title="gerrit-build">gerrit-build</a><div class="article-meta-wrap"><span class="post-meta-date"><i class="far fa-calendar-alt"></i><span class="article-meta-label">Created</span><time datetime="2023-11-09T08:10:15.000Z" title="Created 2023-11-09 08:10:15">2023-11-09</time></span><span class="article-meta"><span class="article-meta-separator">|</span><i class="fas fa-inbox"></i><a class="article-meta__categories" href="/categories/gerrit-build/">gerrit build</a></span></div><div class="content">下载 Gerritgerrit download:
+link: https://gerrit-releases.storage.googleapis.com
+For example：gerrit-3.8.0.war ---&gt; https://gerrit-releases.storage.googleapis.com/gerrit-3.8.0.war
+
+</div></div></div><div class="recent-post-item"><div class="recent-post-info no-cover"><a class="article-title" href="/2023/10/02/linux/shell/shell-string/" title="shell-string">shell-string</a><div class="article-meta-wrap"><span class="post-meta-date"><i class="far fa-calendar-alt"></i><span class="article-meta-label">Created</span><time datetime="2023-10-02T13:38:15.000Z" title="Created 2023-10-02 13:38:15">2023-10-02</time></span><span class="article-meta"><span class="article-meta-separator">|</span><i class="fas fa-inbox"></i><a class="article-meta__categories" href="/categories/shell/">shell</a></span></div><div class="content">获取字符串长度1$&#123;#string&#125;
+
+字符串拼接12$&#123;str1&#125;$&#123;str2&#125;&quot;$&#123;str1&#125; $&#123;str2&#125;&quot;
+字符串截取12345678910111213141516# 从string字符串的左边第start个字符开始，向右截取到最后，start从0开始$&#123;string:start&#125;# 从string字符串的左边第start个字符开始，向右截取length个字符$&#123;string:start:length&#125;# 从string字符串的右边第start个字符开始，向右截取到最后，start从1开始(0 可省略)$&#123;string:0-start&#125;# 从string字符串的右边第start个字符开始，向右截取length个字符$&#123;string:0-start:length&#125;# 从string字符串左边第一次出现*chars的位置开始，截取*chars右边的所有字符$&#123;string# ...</div></div></div><div class="recent-post-item"><div class="recent-post-info no-cover"><a class="article-title" href="/2023/10/02/00-config/" title="00-config">00-config</a><div class="article-meta-wrap"><span class="post-meta-date"><i class="far fa-calendar-alt"></i><span class="article-meta-label">Created</span><time datetime="2023-10-02T12:32:56.000Z" title="Created 2023-10-02 12:32:56">2023-10-02</time></span><span class="article-meta"><span class="article-meta-separator">|</span><i class="fas fa-inbox"></i><a class="article-meta__categories" href="/categories/rk3588/">rk3588</a></span></div><div class="content">00-config初始化 config 
+1234567891011121314151617181920INIT_CMDS=&quot;chip defconfig lunch .*_defconfig olddefconfig savedefconfig menuconfig config default&quot;init_hook()&#123;	case &quot;$&#123;1:-default&#125;&quot; in		chip) shift; choose_chip $@ ;;		lunch|defconfig) shift; choose_defconfig $@ ;;		*_defconfig) switch_defconfig &quot;$1&quot; ;;		olddefconfig | savedefconfig | menuconfig)			prepare_config			$MAKE $1			;;		config)			prepare_config			$MAKE menuconfig			$MAKE savedefconfig			;;	 ...</div></div></div><div class="recent-post-item"><div class="recent-post-info no-cover"><a class="article-title" href="/2019/08/15/hello-world/" title="Hello World">Hello World</a><div class="article-meta-wrap"><span class="post-meta-date"><i class="far fa-calendar-alt"></i><span class="article-meta-label">Created</span><time datetime="2019-08-15T00:00:00.000Z" title="Created 2019-08-15 00:00:00">2019-08-15</time></span><span class="article-meta"><span class="article-meta-separator">|</span><i class="fas fa-inbox"></i><a class="article-meta__categories" href="/categories/test/">test</a></span></div><div class="content">Welcome to Hexo! This is your very first post. Check documentation for more info. If you get any problems when using Hexo, you can find the answer in troubleshooting or you can ask me on GitHub.
+Quick StartCreate a new post1$ hexo new &quot;My New Post&quot;
+
+More info: Writing
+Run server1$ hexo server
+
+More info: Server
+Generate static files1$ hexo generate
+
+More info: Generating
+Deploy to remote sites1$ hexo deploy
+
+More info: Deployment
+</div></div></div><nav id="pagination"><div class="pagination"><a class="extend prev" rel="prev" href="/"><i class="fas fa-chevron-left fa-fw"></i></a><a class="page-number" href="/">1</a><span class="page-number current">2</span></div></nav></div><div class="aside-content" id="aside-content"><div class="card-widget card-info"><div class="is-center"><div class="avatar-img"><img src="https://i.loli.net/2021/02/24/5O1day2nriDzjSu.png" onerror="this.onerror=null;this.src='/img/friend_404.gif'" alt="avatar"/></div><div class="author-info__name">Tom</div><div class="author-info__description"></div></div><div class="card-info-data site-data is-center"><a href="/archives/"><div class="headline">Articles</div><div class="length-num">20</div></a><a href="/tags/"><div class="headline">Tags</div><div class="length-num">13</div></a><a href="/categories/"><div class="headline">Categories</div><div class="length-num">14</div></a></div><a id="card-info-btn" target="_blank" rel="noopener" href="https://github.com/xxxxxx"><i class="fab fa-github"></i><span>Follow Me</span></a></div><div class="card-widget card-announcement"><div class="item-headline"><i class="fas fa-bullhorn fa-shake"></i><span>Announcement</span></div><div class="announcement_content">Tom's Blog</div></div><div class="sticky_layout"><div class="card-widget card-recent-post"><div class="item-headline"><i class="fas fa-history"></i><span>Recent Post</span></div><div class="aside-list"><div class="aside-list-item no-cover"><div class="content"><a class="title" href="/2025/03/27/net-driver/" title="NET Driver">NET Driver</a><time datetime="2025-03-27T16:21:55.088Z" title="Created 2025-03-27 16:21:55">2025-03-27</time></div></div><div class="aside-list-item no-cover"><div class="content"><a class="title" href="/2025/03/27/pice-driver/" title="PCIe-DRIVER">PCIe-DRIVER</a><time datetime="2025-03-27T16:21:55.088Z" title="Created 2025-03-27 16:21:55">2025-03-27</time></div></div><div class="aside-list-item no-cover"><div class="content"><a class="title" href="/2025/03/27/u-boot-start/" title="start.s">start.s</a><time datetime="2025-03-27T16:21:55.088Z" title="Created 2025-03-27 16:21:55">2025-03-27</time></div></div><div class="aside-list-item no-cover"><div class="content"><a class="title" href="/2025/03/27/wechat-little-app/note-wechat/" title="wechat">wechat</a><time datetime="2025-03-27T16:21:55.088Z" title="Created 2025-03-27 16:21:55">2025-03-27</time></div></div><div class="aside-list-item no-cover"><div class="content"><a class="title" href="/2025/03/27/linux/udev/udev/" title="udev">udev</a><time datetime="2025-03-27T16:21:55.088Z" title="Created 2025-03-27 16:21:55">2025-03-27</time></div></div></div></div><div class="card-widget card-categories"><div class="item-headline">
+            <i class="fas fa-folder-open"></i>
+            <span>Categories</span>
+            <a class="card-more-btn" href="/categories/" title="More">
+    <i class="fas fa-angle-right"></i></a>
+            </div>
+            <ul class="card-category-list" id="aside-cat-list">
+            <li class="card-category-list-item "><a class="card-category-list-link" href="/categories/Markdown/"><span class="card-category-list-name">Markdown</span><span class="card-category-list-count">1</span></a></li><li class="card-category-list-item "><a class="card-category-list-link" href="/categories/NET/"><span class="card-category-list-name">NET</span><span class="card-category-list-count">1</span></a></li><li class="card-category-list-item "><a class="card-category-list-link" href="/categories/PCIe/"><span class="card-category-list-name">PCIe</span><span class="card-category-list-count">2</span></a></li><li class="card-category-list-item "><a class="card-category-list-link" href="/categories/assembler/"><span class="card-category-list-name">assembler</span><span class="card-category-list-count">1</span></a></li><li class="card-category-list-item "><a class="card-category-list-link" href="/categories/flash/"><span class="card-category-list-name">flash</span><span class="card-category-list-count">1</span></a></li><li class="card-category-list-item "><a class="card-category-list-link" href="/categories/gerrit-build/"><span class="card-category-list-name">gerrit build</span><span class="card-category-list-count">1</span></a></li><li class="card-category-list-item "><a class="card-category-list-link" href="/categories/linux-iperf/"><span class="card-category-list-name">linux iperf</span><span class="card-category-list-count">1</span></a></li><li class="card-category-list-item "><a class="card-category-list-link" href="/categories/linux-traceroute/"><span class="card-category-list-name">linux traceroute</span><span class="card-category-list-count">1</span></a></li>
+            </ul></div><div class="card-widget card-tags"><div class="item-headline"><i class="fas fa-tags"></i><span>Tags</span></div><div class="card-tag-cloud"><a href="/tags/gerrit/" style="font-size: 1.1em; color: #999">gerrit</a> <a href="/tags/assembler/" style="font-size: 1.1em; color: #999">assembler</a> <a href="/tags/flash/" style="font-size: 1.1em; color: #999">flash</a> <a href="/tags/shell/" style="font-size: 1.5em; color: #99a9bf">shell</a> <a href="/tags/NET/" style="font-size: 1.1em; color: #999">NET</a> <a href="/tags/tom-test/" style="font-size: 1.1em; color: #999">tom test</a> <a href="/tags/Markdown/" style="font-size: 1.1em; color: #999">Markdown</a> <a href="/tags/PCIe/" style="font-size: 1.3em; color: #99a1ac">PCIe</a> <a href="/tags/uboot/" style="font-size: 1.3em; color: #99a1ac">uboot</a> <a href="/tags/linux/" style="font-size: 1.3em; color: #99a1ac">linux</a> <a href="/tags/udev/" style="font-size: 1.1em; color: #999">udev</a> <a href="/tags/wechat/" style="font-size: 1.1em; color: #999">wechat</a> <a href="/tags/rk3588/" style="font-size: 1.5em; color: #99a9bf">rk3588</a></div></div><div class="card-widget card-archives"><div class="item-headline"><i class="fas fa-archive"></i><span>Archives</span></div><ul class="card-archive-list"><li class="card-archive-list-item"><a class="card-archive-list-link" href="/archives/2025/03/"><span class="card-archive-list-date">March 2025</span><span class="card-archive-list-count">15</span></a></li><li class="card-archive-list-item"><a class="card-archive-list-link" href="/archives/2023/12/"><span class="card-archive-list-date">December 2023</span><span class="card-archive-list-count">1</span></a></li><li class="card-archive-list-item"><a class="card-archive-list-link" href="/archives/2023/11/"><span class="card-archive-list-date">November 2023</span><span class="card-archive-list-count">1</span></a></li><li class="card-archive-list-item"><a class="card-archive-list-link" href="/archives/2023/10/"><span class="card-archive-list-date">October 2023</span><span class="card-archive-list-count">2</span></a></li><li class="card-archive-list-item"><a class="card-archive-list-link" href="/archives/2019/08/"><span class="card-archive-list-date">August 2019</span><span class="card-archive-list-count">1</span></a></li></ul></div><div class="card-widget card-webinfo"><div class="item-headline"><i class="fas fa-chart-line"></i><span>Info</span></div><div class="webinfo"><div class="webinfo-item"><div class="item-name">Article :</div><div class="item-count">20</div></div><div class="webinfo-item"><div class="item-name">UV :</div><div class="item-count" id="busuanzi_value_site_uv"><i class="fa-solid fa-spinner fa-spin"></i></div></div><div class="webinfo-item"><div class="item-name">PV :</div><div class="item-count" id="busuanzi_value_site_pv"><i class="fa-solid fa-spinner fa-spin"></i></div></div><div class="webinfo-item"><div class="item-name">Last Push :</div><div class="item-count" id="last-push-date" data-lastPushDate="2025-03-27T16:22:08.414Z"><i class="fa-solid fa-spinner fa-spin"></i></div></div></div></div></div></div></main><footer id="footer"><div id="footer-wrap"><div class="copyright">&copy;2020 - 2025 By Tom</div><div class="framework-info"><span>Framework </span><a target="_blank" rel="noopener" href="https://hexo.io">Hexo</a><span class="footer-separator">|</span><span>Theme </span><a target="_blank" rel="noopener" href="https://github.com/jerryc127/hexo-theme-butterfly">Butterfly</a></div></div></footer></div><div id="rightside"><div id="rightside-config-hide"><button id="darkmode" type="button" title="Switch Between Light And Dark Mode"><i class="fas fa-adjust"></i></button><button id="hide-aside-btn" type="button" title="Toggle between single-column and double-column"><i class="fas fa-arrows-alt-h"></i></button></div><div id="rightside-config-show"><button id="rightside_config" type="button" title="Setting"><i class="fas fa-cog fa-spin"></i></button><button id="go-up" type="button" title="Back To Top"><span class="scroll-percent"></span><i class="fas fa-arrow-up"></i></button></div></div><div><script src="/js/utils.js"></script><script src="/js/main.js"></script><script src="https://cdn.jsdelivr.net/npm/@fancyapps/ui/dist/fancybox/fancybox.umd.min.js"></script><div class="js-pjax"></div><script async data-pjax src="//busuanzi.ibruce.info/busuanzi/2.3/busuanzi.pure.mini.js"></script></div></body></html>

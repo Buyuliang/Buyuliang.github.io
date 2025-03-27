@@ -1,0 +1,204 @@
+<!DOCTYPE html><html lang="en" data-theme="light"><head><meta charset="UTF-8"><meta http-equiv="X-UA-Compatible" content="IE=edge"><meta name="viewport" content="width=device-width, initial-scale=1.0,viewport-fit=cover"><title>Hexo</title><meta name="author" content="Tom"><meta name="copyright" content="Tom"><meta name="format-detection" content="telephone=no"><meta name="theme-color" content="#ffffff"><meta property="og:type" content="website">
+<meta property="og:title" content="Hexo">
+<meta property="og:url" content="http://example.com/index.html">
+<meta property="og:site_name" content="Hexo">
+<meta property="og:locale" content="en_US">
+<meta property="og:image" content="https://i.loli.net/2021/02/24/5O1day2nriDzjSu.png">
+<meta property="article:author" content="Tom">
+<meta name="twitter:card" content="summary">
+<meta name="twitter:image" content="https://i.loli.net/2021/02/24/5O1day2nriDzjSu.png"><link rel="shortcut icon" href="/img/favicon.png"><link rel="canonical" href="http://example.com/index.html"><link rel="preconnect" href="//cdn.jsdelivr.net"/><link rel="preconnect" href="//busuanzi.ibruce.info"/><link rel="stylesheet" href="/css/index.css"><link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free/css/all.min.css" media="print" onload="this.media='all'"><link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fancyapps/ui/dist/fancybox/fancybox.min.css" media="print" onload="this.media='all'"><script>const GLOBAL_CONFIG = {
+  root: '/',
+  algolia: undefined,
+  localSearch: undefined,
+  translate: undefined,
+  noticeOutdate: undefined,
+  highlight: {"plugin":"highlighjs","highlightCopy":true,"highlightLang":true,"highlightHeightLimit":false},
+  copy: {
+    success: 'Copy successfully',
+    error: 'Copy error',
+    noSupport: 'The browser does not support'
+  },
+  relativeDate: {
+    homepage: false,
+    post: false
+  },
+  runtime: '',
+  dateSuffix: {
+    just: 'Just',
+    min: 'minutes ago',
+    hour: 'hours ago',
+    day: 'days ago',
+    month: 'months ago'
+  },
+  copyright: undefined,
+  lightbox: 'fancybox',
+  Snackbar: undefined,
+  source: {
+    justifiedGallery: {
+      js: 'https://cdn.jsdelivr.net/npm/flickr-justified-gallery/dist/fjGallery.min.js',
+      css: 'https://cdn.jsdelivr.net/npm/flickr-justified-gallery/dist/fjGallery.min.css'
+    }
+  },
+  isPhotoFigcaption: false,
+  islazyload: false,
+  isAnchor: false,
+  percent: {
+    toc: true,
+    rightside: false,
+  },
+  autoDarkmode: false
+}</script><script id="config-diff">var GLOBAL_CONFIG_SITE = {
+  title: 'Hexo',
+  isPost: false,
+  isHome: true,
+  isHighlightShrink: false,
+  isToc: false,
+  postUpdate: '2025-03-27 16:22:08'
+}</script><noscript><style type="text/css">
+  #nav {
+    opacity: 1
+  }
+  .justified-gallery img {
+    opacity: 1
+  }
+
+  #recent-posts time,
+  #post-meta time {
+    display: inline !important
+  }
+</style></noscript><script>(win=>{
+    win.saveToLocal = {
+      set: function setWithExpiry(key, value, ttl) {
+        if (ttl === 0) return
+        const now = new Date()
+        const expiryDay = ttl * 86400000
+        const item = {
+          value: value,
+          expiry: now.getTime() + expiryDay,
+        }
+        localStorage.setItem(key, JSON.stringify(item))
+      },
+
+      get: function getWithExpiry(key) {
+        const itemStr = localStorage.getItem(key)
+
+        if (!itemStr) {
+          return undefined
+        }
+        const item = JSON.parse(itemStr)
+        const now = new Date()
+
+        if (now.getTime() > item.expiry) {
+          localStorage.removeItem(key)
+          return undefined
+        }
+        return item.value
+      }
+    }
+  
+    win.getScript = url => new Promise((resolve, reject) => {
+      const script = document.createElement('script')
+      script.src = url
+      script.async = true
+      script.onerror = reject
+      script.onload = script.onreadystatechange = function() {
+        const loadState = this.readyState
+        if (loadState && loadState !== 'loaded' && loadState !== 'complete') return
+        script.onload = script.onreadystatechange = null
+        resolve()
+      }
+      document.head.appendChild(script)
+    })
+  
+    win.getCSS = (url,id = false) => new Promise((resolve, reject) => {
+      const link = document.createElement('link')
+      link.rel = 'stylesheet'
+      link.href = url
+      if (id) link.id = id
+      link.onerror = reject
+      link.onload = link.onreadystatechange = function() {
+        const loadState = this.readyState
+        if (loadState && loadState !== 'loaded' && loadState !== 'complete') return
+        link.onload = link.onreadystatechange = null
+        resolve()
+      }
+      document.head.appendChild(link)
+    })
+  
+      win.activateDarkMode = function () {
+        document.documentElement.setAttribute('data-theme', 'dark')
+        if (document.querySelector('meta[name="theme-color"]') !== null) {
+          document.querySelector('meta[name="theme-color"]').setAttribute('content', '#0d0d0d')
+        }
+      }
+      win.activateLightMode = function () {
+        document.documentElement.setAttribute('data-theme', 'light')
+        if (document.querySelector('meta[name="theme-color"]') !== null) {
+          document.querySelector('meta[name="theme-color"]').setAttribute('content', '#ffffff')
+        }
+      }
+      const t = saveToLocal.get('theme')
+    
+          if (t === 'dark') activateDarkMode()
+          else if (t === 'light') activateLightMode()
+        
+      const asideStatus = saveToLocal.get('aside-status')
+      if (asideStatus !== undefined) {
+        if (asideStatus === 'hide') {
+          document.documentElement.classList.add('hide-aside')
+        } else {
+          document.documentElement.classList.remove('hide-aside')
+        }
+      }
+    
+    const detectApple = () => {
+      if(/iPad|iPhone|iPod|Macintosh/.test(navigator.userAgent)){
+        document.documentElement.classList.add('apple')
+      }
+    }
+    detectApple()
+    })(window)</script><meta name="generator" content="Hexo 6.3.0"></head><body><div id="sidebar"><div id="menu-mask"></div><div id="sidebar-menus"><div class="avatar-img is-center"><img src="https://i.loli.net/2021/02/24/5O1day2nriDzjSu.png" onerror="onerror=null;src='/img/friend_404.gif'" alt="avatar"/></div><div class="sidebar-site-data site-data is-center"><a href="/archives/"><div class="headline">Articles</div><div class="length-num">20</div></a><a href="/tags/"><div class="headline">Tags</div><div class="length-num">13</div></a><a href="/categories/"><div class="headline">Categories</div><div class="length-num">14</div></a></div><hr class="custom-hr"/></div></div><div class="page" id="body-wrap"><header class="full_page" id="page-header"><nav id="nav"><span id="blog-info"><a href="/" title="Hexo"><span class="site-name">Hexo</span></a></span><div id="menus"><div id="toggle-menu"><a class="site-page" href="javascript:void(0);"><i class="fas fa-bars fa-fw"></i></a></div></div></nav><div id="site-info"><h1 id="site-title">Hexo</h1></div><div id="scroll-down"><i class="fas fa-angle-down scroll-down-effects"></i></div></header><main class="layout" id="content-inner"><div class="recent-posts" id="recent-posts"><div class="recent-post-item"><div class="recent-post-info no-cover"><a class="article-title" href="/2025/03/27/net-driver/" title="NET Driver">NET Driver</a><div class="article-meta-wrap"><span class="post-meta-date"><i class="far fa-calendar-alt"></i><span class="article-meta-label">Created</span><time datetime="2025-03-27T16:21:55.088Z" title="Created 2025-03-27 16:21:55">2025-03-27</time></span><span class="article-meta"><span class="article-meta-separator">|</span><i class="fas fa-inbox"></i><a class="article-meta__categories" href="/categories/NET/">NET</a></span></div><div class="content">12345678910111213141516171819202122232425262728293031323334  struct net_device_ops &#123;       int         (*ndo_init)(struct net_device *dev);     /*当第一次注册网络设备的时候此函数会执行*/      void        (*ndo_uninit)(struct net_device *dev);     /*卸载网络设备的时候此函数会执行*/      int         (*ndo_open)(struct net_device *dev);     /*打开网络设备的时候此函数会执行，网络驱动程序需要实现此函数，非常重要*/      int         (*ndo_stop)(struct net_device *dev);       netdev_tx_t (*ndo_start_xmit) (struct sk_buff *skb,                              struct ne ...</div></div></div><div class="recent-post-item"><div class="recent-post-info no-cover"><a class="article-title" href="/2025/03/27/pice-driver/" title="PCIe-DRIVER">PCIe-DRIVER</a><div class="article-meta-wrap"><span class="post-meta-date"><i class="far fa-calendar-alt"></i><span class="article-meta-label">Created</span><time datetime="2025-03-27T16:21:55.088Z" title="Created 2025-03-27 16:21:55">2025-03-27</time></span><span class="article-meta"><span class="article-meta-separator">|</span><i class="fas fa-inbox"></i><a class="article-meta__categories" href="/categories/PCIe/">PCIe</a></span></div><div class="content">dma_alloc_noncoherentdma_alloc_noncoherent() 是 Linux 内核中的一个函数，用于分配非一致性内存（Non-Coherent Memory）用于 DMA（Direct Memory Access）操作。DMA 是一种数据传输技术，它允许外设直接访问系统内存，而无需通过 CPU 的中介。在进行 DMA 操作时，需要为外设分配一块物理内存区域，这个内存区域通常需要是非一致性内存，以便与外设的特定要求兼容。dma_alloc_noncoherent() 函数的原型如下：
+1void *dma_alloc_noncoherent(struct device *dev, size_t size, dma_addr_t *dma_handle, gfp_t flags);
+它接受四个参数：
+
+dev：要分配 DMA 内存的设备。
+size：要分配的内存大小。
+dma_handle：用于接收分配的 DMA 内存的物理地址。
+flags：内存分配的标志。
+
+使用 dma_alloc_noncoherent() 函数，可以为设备分配一块非一致性内存，并得到该 ...</div></div></div><div class="recent-post-item"><div class="recent-post-info no-cover"><a class="article-title" href="/2025/03/27/u-boot-start/" title="start.s">start.s</a><div class="article-meta-wrap"><span class="post-meta-date"><i class="far fa-calendar-alt"></i><span class="article-meta-label">Created</span><time datetime="2025-03-27T16:21:55.088Z" title="Created 2025-03-27 16:21:55">2025-03-27</time></span><span class="article-meta"><span class="article-meta-separator">|</span><i class="fas fa-inbox"></i><a class="article-meta__categories" href="/categories/uboot/">uboot</a></span></div><div class="content">12345678910111213141516171819202122232425262728293031323334353637383940414243444546474849505152535455565758596061626364656667686970717273747576777879808182838485868788899091929394959697989910010110210310410510610710810911011111211311411511611711811912012112212312412512612712812913013113213313413513613713813914014114214314414514614714814915015115215315415515615715815916016116216316416516616716816917017117217317417517617717817918018118218318418518618718818919019119219319419519619719819920020120220 ...</div></div></div><div class="recent-post-item"><div class="recent-post-info no-cover"><a class="article-title" href="/2025/03/27/wechat-little-app/note-wechat/" title="wechat">wechat</a><div class="article-meta-wrap"><span class="post-meta-date"><i class="far fa-calendar-alt"></i><span class="article-meta-label">Created</span><time datetime="2025-03-27T16:21:55.088Z" title="Created 2025-03-27 16:21:55">2025-03-27</time></span><span class="article-meta"><span class="article-meta-separator">|</span><i class="fas fa-inbox"></i><a class="article-meta__categories" href="/categories/wechat/">wechat</a></span></div><div class="content">文档目录12345pages       页面文件夹xxx.js      xxx.wxss    等同于 CSSxxx.wxml    等同于 HTMLxxx.json    用于对页面配置
+
+页面标题文本123456789101 直接修改 page.json 文件&#123;  &quot;navigationBarTitleText&quot;: &quot;豆瓣 - 电影&quot;&#125;2 使用 JS 修改wx.setNavigationBarTitle(&#123;      title: that.data.mername//页面标题为路由参数&#125;)
+
+设置默认启动界面12345app.json 文件  &quot;pages&quot;: [    &quot;pages/index/index&quot;  ]
+
+调用自定义接口1234567891011121314151617# 自定义函数const formatTime = date =&gt; (    ...)# 导出 formatTime 接口module.exports = (    form ...</div></div></div><div class="recent-post-item"><div class="recent-post-info no-cover"><a class="article-title" href="/2025/03/27/linux/udev/udev/" title="udev">udev</a><div class="article-meta-wrap"><span class="post-meta-date"><i class="far fa-calendar-alt"></i><span class="article-meta-label">Created</span><time datetime="2025-03-27T16:21:55.088Z" title="Created 2025-03-27 16:21:55">2025-03-27</time></span><span class="article-meta"><span class="article-meta-separator">|</span><i class="fas fa-inbox"></i><a class="article-meta__categories" href="/categories/udev/">udev</a></span></div><div class="content">使用 udevadm monitor 实时监控事件123456789101112131415161718192021udevadm monitor 可以实时监控 udev 事件。监控所有事件：sudo udevadm monitor监控特定子系统（如 udc 或 platform）：sudo udevadm monitor --subsystem-match=udc,platform日志：[来源][时间戳] 动作   设备路径 (子系统)KERNEL[3477.342949] remove   /devices/platform/fec80000.i2c/i2c-6/6-0022/typec/port1/port1-partner (typec)UDEV  [3477.343654] remove   /devices/platform/fec80000.i2c/i2c-6/6-0022/typec/port1/port1-partner (typec)KERNEL[3477.347728] change   /devices/platform/fec80000.i2c/i2c-6/6 ...</div></div></div><div class="recent-post-item"><div class="recent-post-info no-cover"><a class="article-title" href="/2025/03/27/PCIe/" title="PCIe">PCIe</a><div class="article-meta-wrap"><span class="post-meta-date"><i class="far fa-calendar-alt"></i><span class="article-meta-label">Created</span><time datetime="2025-03-27T16:21:55.087Z" title="Created 2025-03-27 16:21:55">2025-03-27</time></span><span class="article-meta"><span class="article-meta-separator">|</span><i class="fas fa-inbox"></i><a class="article-meta__categories" href="/categories/PCIe/">PCIe</a></span></div><div class="content">TLP1TLP(Transaction Layer Packet): TLP包是由PCIe的Endpoint或者Root Complex发送的数据包。在PCIe体系中的事务层生成;TLP包由头（Hander）、数据（Data）、ECRC（校验）几个部分组成。TLP是用户程序和PCIe设备交互的唯一渠道.。
+
+DBI bus123456789PCIe DBI（Device Bus Interface）总线是 PCIe 设备和主机之间进行数据交换和通信的总线。DBI 总线在 PCIe 基本配置空间之外，提供了一种直接的、低延迟的数据传输通道，用于设备和主机之间的寄存器读写操作。DBI 总线是由 PCIe 设备上的端点功能提供的，主机通过 PCIe 配置事务（Configuration Transaction）将数据发送到设备的 DBI 总线上，并通过 DBI 总线接收来自设备的响应。PCIe DBI 总线主要用于以下操作：    寄存器读写：通过 DBI 总线，主机可以直接读写设备的特定寄存器，包括设备状态、配置寄存器和其他设备特定寄存器。    中断：设备可以通过 DBI 总线向主机发送 ...</div></div></div><div class="recent-post-item"><div class="recent-post-info no-cover"><a class="article-title" href="/2025/03/27/Assembler/arm-assembler/" title="assembler">assembler</a><div class="article-meta-wrap"><span class="post-meta-date"><i class="far fa-calendar-alt"></i><span class="article-meta-label">Created</span><time datetime="2025-03-27T16:21:55.087Z" title="Created 2025-03-27 16:21:55">2025-03-27</time></span><span class="article-meta"><span class="article-meta-separator">|</span><i class="fas fa-inbox"></i><a class="article-meta__categories" href="/categories/assembler/">assembler</a></span></div><div class="content">Cortex-A 的内核寄存器组
+赋值指令 MOV、LDRMOV12MOV 目标寄存器 , 立即数MOV R0,#1 			;为寄存器R0赋值，值为1
+
+LDR12LDR 目标寄存器 , = 赋值数LDR R0,=0xAB00CD 	;为寄存器R0赋值，值为0xAB00CD
+
+算数指令 ADD、SUB、MULADD加法123ADD 目标寄存器 , 寄存器1 , 寄存器2（也可以是立即数）ADD R0,R0,R1 		;*R0 = *R0 + *R1ADD R0,R0,#10 		;*R0 = *R0 + 10
+
+SUB减法123SUB 目标寄存器 , 寄存器1 , 寄存器2（也可以是立即数）SUB R0,R0,R1 		;*R0 = *R0 - R1SUB R0,R0,#10 		;*R0 = *R0 - 10
+
+MUL乘法123MUL 目标寄存器 , 寄存器1 , 寄存器2（也可以是立即数）MUL R0,R0,R1 		;*R0 = *R0 * R1MUL R0,R0,#10 		;*R0 = *R0 * 10
+
+移位指令 LSL、LSRLSL左移位12MOV 目标寄存器 , 寄存器 ...</div></div></div><div class="recent-post-item"><div class="recent-post-info no-cover"><a class="article-title" href="/2025/03/27/Flash/flash/" title="flash">flash</a><div class="article-meta-wrap"><span class="post-meta-date"><i class="far fa-calendar-alt"></i><span class="article-meta-label">Created</span><time datetime="2025-03-27T16:21:55.087Z" title="Created 2025-03-27 16:21:55">2025-03-27</time></span><span class="article-meta"><span class="article-meta-separator">|</span><i class="fas fa-inbox"></i><a class="article-meta__categories" href="/categories/flash/">flash</a></span></div><div class="content">flashnor flash12NOR Flash是一种非易失闪存技术，是Intel在1988年创建。是市场上两种主要的非易失闪存技术之一。彻底改变了原先由EPROM和EEPROM一统天下的局面。NOR Flash 的特点是芯片内执行（XIP ，eXecute In Place），这样应用程序可以直接在Flash闪存内运行，不必再把代码读到系统RAM中。NOR 的传输效率很高，在1~4MB的小容量时具有很高的成本效益，但是很低的写入和擦除速度大大影响到它的性能
+
+nand flash121989年，东芝公司发表了NAND flash结构，强调降低每比特的成本，更高的性能，并且象磁盘一样可以通过接口轻松升级。NAND的结构能提供极高的单元密度，可以达到高存储密度，并且写入和擦除的速度也很快。应用NAND的困难在于Flash的管理需要特殊的系统接口。
+
+接口差别123NOR flash带有SRAM接口，有足够的地址引脚来寻址，可以很容易地存取其内部的每一个字节。NAND器件使用复杂的I/O口来串行地存取数据，各个产品或厂商的方法可能各不相同。8个引脚用来传送控制、地址和数据信息。NAND读 ...</div></div></div><div class="recent-post-item"><div class="recent-post-info no-cover"><a class="article-title" href="/2025/03/27/RK3588/RK3588-01-start/" title="rk3588 bootrom">rk3588 bootrom</a><div class="article-meta-wrap"><span class="post-meta-date"><i class="far fa-calendar-alt"></i><span class="article-meta-label">Created</span><time datetime="2025-03-27T16:21:55.087Z" title="Created 2025-03-27 16:21:55">2025-03-27</time></span><span class="article-meta"><span class="article-meta-separator">|</span><i class="fas fa-inbox"></i><a class="article-meta__categories" href="/categories/rk3588/">rk3588</a></span></div><div class="content">bootRomTable12345RK3588从内部BootRom启动，通过软件编程支持重新映射功能。Remap由 PMU_SGRF_SOC_CON2[1:0] 控制。当remap设置为2&#x27;b01时，BootRom不可访问，PMU_SRAM被映射到地址OxFFFF0000。当remap设置为2&#x27;b10时，BootRom是不可访问的，SYSTEM_SRAM被映射到地址OxFFFF0000。板子一上电，PC就指向0xFFFF0000地址，第一条代码可以在BootRom执行，也可以在PMU_SRAM执行，也可以在SYSTEM_SRAM执行
+
+12345678910111213RK3588提供从片外设备(如SDMMC卡、eMMC存储器、串行Nand或Nor闪存)启动系统。当这些设备没有准备好启动代码时，也可以通过USB OTG接口提供系统代码下载到这些设备中。所有的引导代码都将存储在内部BootRom中。下面是整个引导代码的引导过程，引导代码会提前保存在BootRom中。支持以下特性。- 支持系统从以下设备启动:    - Serial Nor Flash, 1位或4位数据 ...</div></div></div><div class="recent-post-item"><div class="recent-post-info no-cover"><a class="article-title" href="/2025/03/27/RK3588/RK3588-02-uboot-start/" title="uboot start">uboot start</a><div class="article-meta-wrap"><span class="post-meta-date"><i class="far fa-calendar-alt"></i><span class="article-meta-label">Created</span><time datetime="2025-03-27T16:21:55.087Z" title="Created 2025-03-27 16:21:55">2025-03-27</time></span><span class="article-meta"><span class="article-meta-separator">|</span><i class="fas fa-inbox"></i><a class="article-meta__categories" href="/categories/rk3588/">rk3588</a></span></div><div class="content">SPL12345678910一般ROM Code是固化在芯片内部的，BL1是有厂商提供的bin文件，并不会开放源代码，所以从BL2开始。从系统启动打印的信息可以找到BL2的入口如下，关键是_start函数.Load uboot, ReadLba = 2000     //加载uboot （BL2）Load OK, addr=0x200000, size=0x873d4  //uboot 地址和大小 mainload结束...INFO:    Entry point address = 0x200000  //UBoot 入口地址 //u-boot 符号表4019: 0000000000200000     0 NOTYPE  GLOBAL DEFAULT    1 _start
+
+1234.globl  _start _start:         nop         b       reset     //jump to reset  ----&gt;</div></div></div><nav id="pagination"><div class="pagination"><span class="page-number current">1</span><a class="page-number" href="/page/2/#content-inner">2</a><a class="extend next" rel="next" href="/page/2/#content-inner"><i class="fas fa-chevron-right fa-fw"></i></a></div></nav></div><div class="aside-content" id="aside-content"><div class="card-widget card-info"><div class="is-center"><div class="avatar-img"><img src="https://i.loli.net/2021/02/24/5O1day2nriDzjSu.png" onerror="this.onerror=null;this.src='/img/friend_404.gif'" alt="avatar"/></div><div class="author-info__name">Tom</div><div class="author-info__description"></div></div><div class="card-info-data site-data is-center"><a href="/archives/"><div class="headline">Articles</div><div class="length-num">20</div></a><a href="/tags/"><div class="headline">Tags</div><div class="length-num">13</div></a><a href="/categories/"><div class="headline">Categories</div><div class="length-num">14</div></a></div><a id="card-info-btn" target="_blank" rel="noopener" href="https://github.com/xxxxxx"><i class="fab fa-github"></i><span>Follow Me</span></a></div><div class="card-widget card-announcement"><div class="item-headline"><i class="fas fa-bullhorn fa-shake"></i><span>Announcement</span></div><div class="announcement_content">Tom's Blog</div></div><div class="sticky_layout"><div class="card-widget card-recent-post"><div class="item-headline"><i class="fas fa-history"></i><span>Recent Post</span></div><div class="aside-list"><div class="aside-list-item no-cover"><div class="content"><a class="title" href="/2025/03/27/net-driver/" title="NET Driver">NET Driver</a><time datetime="2025-03-27T16:21:55.088Z" title="Created 2025-03-27 16:21:55">2025-03-27</time></div></div><div class="aside-list-item no-cover"><div class="content"><a class="title" href="/2025/03/27/pice-driver/" title="PCIe-DRIVER">PCIe-DRIVER</a><time datetime="2025-03-27T16:21:55.088Z" title="Created 2025-03-27 16:21:55">2025-03-27</time></div></div><div class="aside-list-item no-cover"><div class="content"><a class="title" href="/2025/03/27/u-boot-start/" title="start.s">start.s</a><time datetime="2025-03-27T16:21:55.088Z" title="Created 2025-03-27 16:21:55">2025-03-27</time></div></div><div class="aside-list-item no-cover"><div class="content"><a class="title" href="/2025/03/27/wechat-little-app/note-wechat/" title="wechat">wechat</a><time datetime="2025-03-27T16:21:55.088Z" title="Created 2025-03-27 16:21:55">2025-03-27</time></div></div><div class="aside-list-item no-cover"><div class="content"><a class="title" href="/2025/03/27/linux/udev/udev/" title="udev">udev</a><time datetime="2025-03-27T16:21:55.088Z" title="Created 2025-03-27 16:21:55">2025-03-27</time></div></div></div></div><div class="card-widget card-categories"><div class="item-headline">
+            <i class="fas fa-folder-open"></i>
+            <span>Categories</span>
+            <a class="card-more-btn" href="/categories/" title="More">
+    <i class="fas fa-angle-right"></i></a>
+            </div>
+            <ul class="card-category-list" id="aside-cat-list">
+            <li class="card-category-list-item "><a class="card-category-list-link" href="/categories/Markdown/"><span class="card-category-list-name">Markdown</span><span class="card-category-list-count">1</span></a></li><li class="card-category-list-item "><a class="card-category-list-link" href="/categories/NET/"><span class="card-category-list-name">NET</span><span class="card-category-list-count">1</span></a></li><li class="card-category-list-item "><a class="card-category-list-link" href="/categories/PCIe/"><span class="card-category-list-name">PCIe</span><span class="card-category-list-count">2</span></a></li><li class="card-category-list-item "><a class="card-category-list-link" href="/categories/assembler/"><span class="card-category-list-name">assembler</span><span class="card-category-list-count">1</span></a></li><li class="card-category-list-item "><a class="card-category-list-link" href="/categories/flash/"><span class="card-category-list-name">flash</span><span class="card-category-list-count">1</span></a></li><li class="card-category-list-item "><a class="card-category-list-link" href="/categories/gerrit-build/"><span class="card-category-list-name">gerrit build</span><span class="card-category-list-count">1</span></a></li><li class="card-category-list-item "><a class="card-category-list-link" href="/categories/linux-iperf/"><span class="card-category-list-name">linux iperf</span><span class="card-category-list-count">1</span></a></li><li class="card-category-list-item "><a class="card-category-list-link" href="/categories/linux-traceroute/"><span class="card-category-list-name">linux traceroute</span><span class="card-category-list-count">1</span></a></li>
+            </ul></div><div class="card-widget card-tags"><div class="item-headline"><i class="fas fa-tags"></i><span>Tags</span></div><div class="card-tag-cloud"><a href="/tags/gerrit/" style="font-size: 1.1em; color: #999">gerrit</a> <a href="/tags/assembler/" style="font-size: 1.1em; color: #999">assembler</a> <a href="/tags/flash/" style="font-size: 1.1em; color: #999">flash</a> <a href="/tags/shell/" style="font-size: 1.5em; color: #99a9bf">shell</a> <a href="/tags/NET/" style="font-size: 1.1em; color: #999">NET</a> <a href="/tags/tom-test/" style="font-size: 1.1em; color: #999">tom test</a> <a href="/tags/Markdown/" style="font-size: 1.1em; color: #999">Markdown</a> <a href="/tags/PCIe/" style="font-size: 1.3em; color: #99a1ac">PCIe</a> <a href="/tags/uboot/" style="font-size: 1.3em; color: #99a1ac">uboot</a> <a href="/tags/linux/" style="font-size: 1.3em; color: #99a1ac">linux</a> <a href="/tags/udev/" style="font-size: 1.1em; color: #999">udev</a> <a href="/tags/wechat/" style="font-size: 1.1em; color: #999">wechat</a> <a href="/tags/rk3588/" style="font-size: 1.5em; color: #99a9bf">rk3588</a></div></div><div class="card-widget card-archives"><div class="item-headline"><i class="fas fa-archive"></i><span>Archives</span></div><ul class="card-archive-list"><li class="card-archive-list-item"><a class="card-archive-list-link" href="/archives/2025/03/"><span class="card-archive-list-date">March 2025</span><span class="card-archive-list-count">15</span></a></li><li class="card-archive-list-item"><a class="card-archive-list-link" href="/archives/2023/12/"><span class="card-archive-list-date">December 2023</span><span class="card-archive-list-count">1</span></a></li><li class="card-archive-list-item"><a class="card-archive-list-link" href="/archives/2023/11/"><span class="card-archive-list-date">November 2023</span><span class="card-archive-list-count">1</span></a></li><li class="card-archive-list-item"><a class="card-archive-list-link" href="/archives/2023/10/"><span class="card-archive-list-date">October 2023</span><span class="card-archive-list-count">2</span></a></li><li class="card-archive-list-item"><a class="card-archive-list-link" href="/archives/2019/08/"><span class="card-archive-list-date">August 2019</span><span class="card-archive-list-count">1</span></a></li></ul></div><div class="card-widget card-webinfo"><div class="item-headline"><i class="fas fa-chart-line"></i><span>Info</span></div><div class="webinfo"><div class="webinfo-item"><div class="item-name">Article :</div><div class="item-count">20</div></div><div class="webinfo-item"><div class="item-name">UV :</div><div class="item-count" id="busuanzi_value_site_uv"><i class="fa-solid fa-spinner fa-spin"></i></div></div><div class="webinfo-item"><div class="item-name">PV :</div><div class="item-count" id="busuanzi_value_site_pv"><i class="fa-solid fa-spinner fa-spin"></i></div></div><div class="webinfo-item"><div class="item-name">Last Push :</div><div class="item-count" id="last-push-date" data-lastPushDate="2025-03-27T16:22:08.414Z"><i class="fa-solid fa-spinner fa-spin"></i></div></div></div></div></div></div></main><footer id="footer"><div id="footer-wrap"><div class="copyright">&copy;2020 - 2025 By Tom</div><div class="framework-info"><span>Framework </span><a target="_blank" rel="noopener" href="https://hexo.io">Hexo</a><span class="footer-separator">|</span><span>Theme </span><a target="_blank" rel="noopener" href="https://github.com/jerryc127/hexo-theme-butterfly">Butterfly</a></div></div></footer></div><div id="rightside"><div id="rightside-config-hide"><button id="darkmode" type="button" title="Switch Between Light And Dark Mode"><i class="fas fa-adjust"></i></button><button id="hide-aside-btn" type="button" title="Toggle between single-column and double-column"><i class="fas fa-arrows-alt-h"></i></button></div><div id="rightside-config-show"><button id="rightside_config" type="button" title="Setting"><i class="fas fa-cog fa-spin"></i></button><button id="go-up" type="button" title="Back To Top"><span class="scroll-percent"></span><i class="fas fa-arrow-up"></i></button></div></div><div><script src="/js/utils.js"></script><script src="/js/main.js"></script><script src="https://cdn.jsdelivr.net/npm/@fancyapps/ui/dist/fancybox/fancybox.umd.min.js"></script><div class="js-pjax"></div><script async data-pjax src="//busuanzi.ibruce.info/busuanzi/2.3/busuanzi.pure.mini.js"></script></div></body></html>
